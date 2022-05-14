@@ -1,0 +1,17 @@
+{
+  "folders": [
+	{
+		"path": ".."
+	},
+	{
+		"path": "..\\..\\..\\datadown\\shopping-template\\data"
+	},
+	{
+		"path": "..\\..\\..\\datadown\\shopping-template\\img"
+	},
+	{
+		"path": "..\\..\\..\\datadown\\shopping-template\\src"
+	}
+],
+  "settings": {}
+}

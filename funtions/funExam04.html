@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <script>
+        function test(name){
+            var output = `Hello ${name}...!`;
+            return function(){
+                console.log(output);
+            }
+        }
+
+        test('javascript')();
+        let test1 = test('Web');
+        let test2 = test('Ajax');
+        test1();
+        test2();
+    </script>
+    
+<body>
+    <script>test('홍길동');</script>
+</body>
+</html>

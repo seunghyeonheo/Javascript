@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../style.css">
+    <script>
+        function chech(f){
+            let row = f.row.value;
+            let col = f.col.value;
+            console.log(`row:${row}, col${col}`);
+            let html = '<table><tr>';
+
+                for(let j=0; i<row; i++){
+                    html += `<th>${j+1}</th>`;
+                }
+                html += '</tr>';
+
+                for(let j=0; j<col; j++){
+                    html += '<td>&nbsp</td>'
+                }
+                html += '</tr>';
+        }
+            if(isFinite(row)==false){
+                alert("숫자를 입력하세요")
+                f.row.value ='';
+                f.row.focus();
+                return false;
+            }else if(row<3 || row>10){
+                alert('3~10사이의 수만 입력하세요');
+                f.row.value = '';
+                f.row.focus();
+                return false;
+            }5
+        }
+        function makeTable(){
+            
+        }
+    </script>
+</head>
+<body>
+    <form name='myform' onsubmit="return check(this)">
+        행의 수 : <input type="text" name="row" id="row"
+        value="5" size="20"><br>
+        열의 수 : <input type="text" name="col" id="col"
+        value="5" size="20">
+        <button>테이블 생성</button>
+
+    </form>
+    <div id="panel"></div>  
+</body>
+</html>

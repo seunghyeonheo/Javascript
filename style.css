@@ -1,0 +1,23 @@
+*{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 22px;
+}
+
+table{
+    width: 50%;
+}
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th{
+    background-color: gold;
+}
+
+.title{
+    font-size: 12;
+    color: violet;
+    height: 19px;
+    border: 1px dashed;
+}
