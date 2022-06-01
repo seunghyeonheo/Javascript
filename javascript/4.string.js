@@ -2,7 +2,9 @@
 
 let string = "안녕하세요"
 
-let myName = "seunghyeon";
+let myName = "Heoseunghyeon";
+let herName = myName;
+console.log(herName);
 
 myName = "Hello\nthis is seunghyeon\t\t나는\\코딩하는 중이야";
 
