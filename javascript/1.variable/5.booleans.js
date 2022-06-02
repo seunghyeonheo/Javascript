@@ -13,6 +13,7 @@ console.log(isPassed);
 console.log(!!0);
 console.log(!!null);
 
+//Truthy 참인 값
 console.log(!!1);
 console.log(!!undefined);
 console.log(!!"Me");
