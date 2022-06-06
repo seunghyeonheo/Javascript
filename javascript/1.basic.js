@@ -10,7 +10,11 @@ console.log(result);
 
 // 사용예제2
 
-let lastName = "이";
+let lastName = "Lee";
 let firstName = "민형";
-let fullName = `${lastName} ${firstName}`;
-console.log(fullName);
+
+function fullName(firstName, lastName){
+    return `${firstName} ${lastName}`;
+}
+
+console.log(fullName(firstName,lastName));
