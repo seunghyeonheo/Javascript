@@ -18,8 +18,8 @@ function calculator(a,b,action){
     return result;
 }
 
-calculator (-1,3,add);
-calculator (2,4, multiply);
+//calculator (-1,3,add);
+//calculator (2,4, multiply);
 
 
 //화살표함수
@@ -31,4 +31,4 @@ function callback(m,n,action){
     return result;
 }
 
-callback(2,4,call);
+callback(4,5,call);
