@@ -5,14 +5,13 @@
 // 생성자함수를 클래스로 바꿀 것임 
 
 class Fruit {
-    // 생성자 : new 키워드로 객체를 생성할 때 호출되는 함수
+    // 생성자 : 모든 클래스는 기본적인 생성자가 있어야 함.  new 키워드로 '객체를 생성할 때' 호출되는 함수
     constructor(name, emoji) {
-        // fruit이라는 객체를 만드는 데 필요한 데이터를 받아오기 위해 생성자를 만든다. 
+        // 생성자 안에서 fruit이라는 객체를 만들기 위해 필요한 데이터를 채워준다. 
         this.name = name;
         this.emoji = emoji;
-        //key, value
     }
-   // 일반적으로 생성자 밖에 함수를 정의함. function 키워드를 붙이면 오류 발생함(!)
+   // 일반적으로 생성자 밖에 (멤버)함수를 정의함. function 키워드를 붙이면 오류 발생함(!)
     
    display = () => {
        console.log(`${this.name}: ${this.emoji}`);
