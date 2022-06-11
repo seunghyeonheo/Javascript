@@ -39,11 +39,15 @@ class Group{
 }
 
 class Rapper extends Group {
+    constructor(groupName, agency) {
+        super(groupName); //groupName은 Group에 정의되어 있기 때문에 super(부모클래스)를 통해 받아온다. 
+        this.agency = agency;
+    }
     rap(){
         console.log('I can rap');
     }
 }
-const jeno = new Rapper('NctDream');
+const jeno = new Rapper('NctDream', 'sm');
 console.log(jeno);
 jeno.sing();
 jeno.dance();
