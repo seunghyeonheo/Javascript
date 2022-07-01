@@ -46,6 +46,11 @@ class Rapper extends Group {
     rap(){
         console.log('I can rap');
     }
+    //자식클래스에서 내 행동을 부모의 행동에 덮어 씌우고 싶다면 다르게 쓰면 됨! 
+    dance(){
+        super.dance(); //부모에 있는 dance함수를 먼저 쓰고 내가 원하는 함수를 구현할 수도 있음 
+        console.log('나는 힙하게 춤춰');
+    } 
 }
 const jeno = new Rapper('NctDream', 'sm');
 console.log(jeno);

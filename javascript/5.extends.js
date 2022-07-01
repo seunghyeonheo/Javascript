@@ -54,6 +54,9 @@ class Animal {
         play() {
             console.log('놀자아~');
         }
+        bark(){
+            console.log('짖는다!');
+        }
         //오버라이딩 
         eat(){
             super.eat();
@@ -61,6 +64,8 @@ class Animal {
         }
     }
 
-    const dog = new Dog('빨강이'){
-        console.log(dog);
-    }
+    const dog = new Dog('빨강이','주인');
+    console.log(dog);
+    dog.bark;
+    dog.eat;
+    dog.play;
